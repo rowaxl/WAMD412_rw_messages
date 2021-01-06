@@ -3,7 +3,7 @@ const writeMessage = require('./paths/writeMessage')
 const readMessages = require('./paths/readMessages')
 
 const router = (req, res) => {
-  console.log(req)
+  // console.log(req)
 
   switch (req.url) {
     case '/':

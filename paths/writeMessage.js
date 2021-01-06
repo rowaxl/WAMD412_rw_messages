@@ -10,19 +10,12 @@ const writeMessage = (req, res) => {
 
       const [_, value] = data.split('=')
 
-      fs.appendFileSync('./public/messages', value + '\n', (err) => {
-        if (err) {
-          console.error(err)
-          res.writeHead(500, {'Access-Control-Allow-Origin':'*'})
-          res.end('Failed to save message')
-          return
-        }
-      })
+      fs.appendFileSync('./public/messages', value + '\n')
+
+      res.writeHead(200, {'Access-Control-Allow-Origin':'*'})
+      res.end('Success to save message')
     })
 
-
-    res.writeHead(200, {'Access-Control-Allow-Origin':'*'})
-    res.end('Success to save message')
     return
   }
 
