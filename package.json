@@ -1,11 +1,11 @@
 {
   "name": "0105_lab",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "author": "rowaxl <rowaxl0@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon app.js"
   },
   "dependencies": {
     "nodemon": "^2.0.6"
