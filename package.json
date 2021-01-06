@@ -1,0 +1,13 @@
+{
+  "name": "0105_lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "rowaxl <rowaxl0@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
