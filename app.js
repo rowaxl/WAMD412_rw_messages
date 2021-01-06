@@ -4,6 +4,8 @@ const writeMessage = require('./routers/writeMessage')
 const readMessages = require('./routers/readMessages')
 
 const server = http.createServer((req, res) => {
+  console.log(req)
+
   switch (req.url) {
     case '/':
       return index(req, res)
